@@ -19,3 +19,8 @@ Route::get('/', function () {
 
 
 Route::get('/pdf', [App\Http\Controllers\DomPdfReportController::class, 'download'])->name('pdf.download');
+
+
+// /laraveldaily
+Route::get('/daily', [App\Http\Controllers\LaravelDailyController::class, 'advaned'])->name('laraveldaily.advaned');
+Route::get('/daily/simple', [App\Http\Controllers\RandomController::class, 'simple'])->name('laraveldaily.simple');
