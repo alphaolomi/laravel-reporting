@@ -6,3 +6,6 @@ In this article, we'll look at four different PHP libraries that can be used to 
 
 We'll compare these libraries based on their features, advantages, and limitations. We'll also discuss how they compare to each other in terms of complexity, control, and integration with frameworks like Laravel.
 
+### What is a report?
+
+A report is a document or a statement that presents information in an organized format for a specific audience and purpose. 
