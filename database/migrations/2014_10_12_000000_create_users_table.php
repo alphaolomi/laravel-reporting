@@ -15,8 +15,17 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
+            $table->string('phone_number')->unique();
+            $table->string('account_number')->unique();
+            $table->string('first_name');
+            $table->string('middle_name');
+            $table->string('last_name');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('role')->default('user');
+            $table->string('status')->default('active');
+            // date of birth
+            $table->date('dob')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
