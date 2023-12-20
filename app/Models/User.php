@@ -30,6 +30,10 @@ class User extends Authenticatable
         'dob',
         'role',
         'status',
+
+        'balance',
+        'registered_at',
+
     ];
 
     /**
@@ -52,5 +56,7 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
         'dob' => 'date',
+        'registered_at' => 'datetime',
+        'balance' => 'decimal:2',
     ];
 }

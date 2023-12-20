@@ -28,3 +28,8 @@ Route::get('/daily/simple', [App\Http\Controllers\RandomController::class, 'simp
 
 // /
 Route::get('users/export/', [UserController::class, 'export']);
+
+
+// /user/report
+// /user/report?from_date=2021-01-01&to_date=2021-01-31&sort_by=name
+Route::get('user/report', [App\Http\Controllers\UserReportController::class, 'displayReport'])->name('user.report');

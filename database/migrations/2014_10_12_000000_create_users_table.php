@@ -21,6 +21,11 @@ return new class extends Migration
             $table->string('middle_name');
             $table->string('last_name');
             $table->timestamp('email_verified_at')->nullable();
+
+            $table->float('balance')->default(0);
+            $table->string('account_type')->default('savings');
+            $table->timestamp('registered_at')->nullable();
+
             $table->string('password');
             $table->string('role')->default('user');
             $table->string('status')->default('active');

@@ -38,6 +38,10 @@ class UserFactory extends Factory
             'dob' => fake()->dateTimeBetween('-50 years', '-18 years')->format('Y-m-d'),
             'role' => fake()->randomElement(['user', 'admin']),
 
+            'balance' => fake()->randomFloat(2, 0, 1000000),
+            'account_type' => fake()->randomElement(['savings', 'current']),
+            'registered_at' => fake()->dateTimeBetween('-5 years', 'now')->format('Y-m-d'),
+
         ];
     }
 
